@@ -1,0 +1,10 @@
+schema: '2.0'
+stages:
+  download_data:
+    cmd: kaggle datasets download -d ashishjangra27/face-mask-12k-images-dataset -p
+      data/raw --unzip
+    outs:
+    - path: data/raw
+      md5: cbf81abc11de96c1a22a0b7b4777b92d.dir
+      size: 344902042
+      nfiles: 11792

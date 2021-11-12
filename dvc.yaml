@@ -1,0 +1,8 @@
+stages:
+  download_data:
+    desc: Загрузка данных через API каггла
+    cmd: kaggle datasets download -d ashishjangra27/face-mask-12k-images-dataset -p
+      data/raw --unzip
+    outs:
+    - data/raw:
+        cache: false
