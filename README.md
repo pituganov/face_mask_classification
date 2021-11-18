@@ -38,6 +38,8 @@
 
 1. Настроить окружение, установить зависимости через `pip install -r reuqirements.txt`
 
+1. Настроить библиотеку [`kaggle-cli`](https://github.com/Kaggle/kaggle-api#api-credentials) для загрузки данных из kaggle.com
+
 1. Вытащить данные через команду `dvc pull`
 
 1. Реализовать код для обучения модели, обернуть эксперимент в dvc run
