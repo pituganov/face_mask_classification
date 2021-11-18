@@ -1,6 +1,6 @@
 # Face Mask Classification Experiments
 
-![image](https://storage.googleapis.com/kaggle-datasets-images/675484/1187790/ab78dcea35d275e8a01716e83887c558/dataset-cover.png?t=2020-05-26-06-29-59)
+![image](https://storage.googleapis.com/kaggle-datasets-images/675484/1187790/ab78dcea35d275e8a01716e83887c558/dataset-cover.png)
 
 Репозиторий с экспериментами по модели классификации наличия маск
 
