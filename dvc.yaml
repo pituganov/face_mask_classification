@@ -4,5 +4,16 @@ stages:
     cmd: kaggle datasets download -d ashishjangra27/face-mask-12k-images-dataset -p
       data/raw --unzip
     outs:
-    - data/raw:
+    - data/raw/Face Mask Dataset:
+        cache: false
+  train_model:
+    cmd: python -m src.models.train_model -d "./data/raw/Face Mask Dataset" -e 1 -b
+      64 --lr 0.005
+    deps:
+    - data/raw/Face Mask Dataset
+    - src/models
+    outs:
+    - models/model.pkl
+    metrics:
+    - metrics/metrics.json:
         cache: false
