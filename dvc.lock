@@ -17,13 +17,13 @@ stages:
       size: 344902042
       nfiles: 11792
     - path: src/models
-      md5: 671dc45aa4cc89cc0bf9455dc7e63d7c.dir
-      size: 9776
+      md5: 54395124c744d5604d7b1941bff910ca.dir
+      size: 9908
       nfiles: 8
     outs:
     - path: metrics/metrics.json
-      md5: 212d38b5aad49de4a3dd01f0bd68ec92
-      size: 109
+      md5: f53903fde057ac81180a1b2b52b93096
+      size: 110
     - path: models/model.pkl
-      md5: e67daac40ac99a09622fabd221a738e4
+      md5: f0e47288f303ea513b0d512d35dad3e1
       size: 26151

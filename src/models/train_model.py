@@ -4,6 +4,7 @@ from argparse import ArgumentParser
 from pathlib import Path
 import json
 
+
 import pandas as pd
 import torch
 from torch.utils.data import DataLoader
@@ -12,7 +13,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 import torchvision.transforms as transforms
 from tqdm import tqdm
-from sklearn.metrics.classification import (
+from sklearn.metrics import (
     accuracy_score,
     precision_score,
     f1_score,
