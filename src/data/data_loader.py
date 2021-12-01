@@ -1,6 +1,3 @@
-import os
-import pandas as pd
-from torchvision.io import read_image
 import torch
 from pathlib import Path
 from torch.utils.data import Dataset
@@ -11,17 +8,13 @@ from typing import Tuple, List
 
 class FaceMaskDataset(Dataset):
     def __init__(self, dataset_dir: Path, transform=None):
-        self.img_labels: List[Tuple[str, int]] = self.get_files_dataset(
-            dataset_dir
-        )
+        self.img_labels: List[Tuple[str, int]] = self.get_files_dataset(dataset_dir)
         self.dataset_dir = dataset_dir
         self.transform = transform
 
     @staticmethod
     def get_files_dataset(dataset_dir: Path):
-        with_mask_files = [
-            f"WithMask/{i}" for i in listdir(dataset_dir / "WithMask")
-        ]
+        with_mask_files = [f"WithMask/{i}" for i in listdir(dataset_dir / "WithMask")]
         without_mask_files = [
             f"WithoutMask/{i}" for i in listdir(dataset_dir / "WithoutMask")
         ]
