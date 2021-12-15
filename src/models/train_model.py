@@ -38,11 +38,9 @@ def make_epoch(model, loader, optimizer, criterion, desc: str, train=True):
         images: torch.Tensor = batch[0].to(device)
         labels: torch.Tensor = batch[1].to(device)
 
-        # zero the parameter gradients
         if train:
             optimizer.zero_grad()
 
-        # forward + backward + optimize
         outputs = model(images)
         loss = criterion(outputs, labels)
         if train:
